@@ -12,15 +12,18 @@
 		$("#conn")
 				.click(
 						function() {
-							var user = $("#name").val();
+							var order = $("#order").val();
+							var book_category = $("#book_category").val();
+							var start = $("#start").val();
+							var quantity = $("#quantity").val();
 							$
 									.post(
 											"http://192.168.1.104:8080/Book_Servlet/Main.do",
 											{
-												order : "books",
-												book_category : user,
-												start:1,
-												quantity:3,
+												order : order,
+												book_category : book_category,
+												start : start,
+												quantity : quantity,
 												contents : "{\"contents\":[{\"content\":\"mengmiao\"},{\"content\":\"mengmiao\"}]}",
 												user : "web"
 											},
@@ -50,7 +53,15 @@
 </script>
 </head>
 <body>
-	<input type="text" id="name" name="user" />
+	order
+	<input type="text" id="order" name="user" />
+	<br /> book_category
+	<input type="text" id="book_category" name="user" />
+	<br /> start
+	<input type="text" id="start" name="user" />
+	<br /> quantity
+	<input type="text" id="quantity" name="user" />
+	<br />
 	<input type="button" value="查询" id="conn" />
 	<input type="button" value="登录" id="login" />
 	<input type="button" value="登录a" id="conna" />
