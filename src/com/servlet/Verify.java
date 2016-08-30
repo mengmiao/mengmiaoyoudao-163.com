@@ -34,6 +34,7 @@ public class Verify extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		// TODO Auto-generated method stub
+		//再次提交
 		HttpSession session = request.getSession();
 		PrintWriter pw = response.getWriter();
 		int time = session.getMaxInactiveInterval();
