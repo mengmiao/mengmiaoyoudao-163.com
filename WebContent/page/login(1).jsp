@@ -15,11 +15,12 @@
 							var user = $("#name").val();
 							$
 									.post(
-											"http://172.18.4.16:8080/Book_Servlet/Main.do",
+											"http://192.168.1.104:8080/Book_Servlet/Main.do",
 											{
-												order : "book",
+												order : "books",
 												book_category : user,
-												book_id : "1",
+												start:1,
+												quantity:3,
 												contents : "{\"contents\":[{\"content\":\"mengmiao\"},{\"content\":\"mengmiao\"}]}",
 												user : "web"
 											},

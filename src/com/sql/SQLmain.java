@@ -14,8 +14,8 @@ public class SQLmain {
 	
 	public static void One() {
 		Connection conn = null;
-		String url = "jdbc:mysql://172.18.4.16:3306/book_city";
-		String user = "user";
+		String url = "jdbc:mysql://192.168.1.104:3306/book_city";
+		String user = "newuser";
 		String password = "mengmiao,.0.";
 		try {
 			System.out.println("----");
